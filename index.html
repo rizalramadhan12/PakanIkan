@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pemberian Makan Ikan Otomatis</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Pemberian Makan Ikan Otomatis</h1>
+        <div class="controls">
+            <label for="feeding-time">Waktu Pemberian Makan:</label>
+            <input type="time" id="feeding-time">
+            <button id="set-time">Atur Waktu</button>
+            <button id="reset-time">Reset</button> <!-- Tombol Reset -->
+            <button id="reset-history">Reset Riwayat</button> <!-- Tombol Reset Riwayat -->
+        </div>
+        <div class="status">
+            <p id="status-message">Belum ada waktu yang diatur.</p>
+        </div>
+        <div class="history">
+            <h2>Riwayat Waktu Pemberian Makan</h2>
+            <ul id="feeding-history"></ul> <!-- Daftar riwayat -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
